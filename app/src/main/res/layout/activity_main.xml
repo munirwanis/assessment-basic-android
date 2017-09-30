@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.wanis.assessment.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/choose_card_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/chooseCardTextView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/finalGameTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseCardTextView"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/cardButton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:onClick="cardClicked"
+            app:srcCompat="@drawable/card" />
+
+        <ImageButton
+            android:id="@+id/cardButton2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:onClick="cardClicked"
+            app:srcCompat="@drawable/card" />
+
+        <ImageButton
+            android:id="@+id/cardButton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:onClick="cardClicked"
+            app:srcCompat="@drawable/card" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/play_again_text"
+        android:visibility="invisible"
+        android:onClick="playAgain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/finalGameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/final_game_losing_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/playAgainButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

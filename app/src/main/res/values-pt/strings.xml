@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Assessment</string>
+    <string name="choose_card_text">Selecione uma carta:</string>
+    <string name="final_game_losing_text">CORINGA selecionado, você perdeu!</string>
+    <string name="final_game_winning_text">ÁS selecionado, você ganhou!</string>
+    <string name="play_again_text">Jogue de novo!</string>
+</resources>

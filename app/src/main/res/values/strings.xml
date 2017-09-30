@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android Assessment</string>
+    <string name="final_game_losing_text">JOKER was chosen, you lost!</string>
+    <string name="final_game_winning_text">ACE was chosen, you win!</string>
+    <string name="play_again_text">Play Again!</string>
+    <string name="choose_card_text">Choose a card:</string>
+</resources>
